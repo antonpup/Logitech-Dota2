@@ -33,6 +33,11 @@ This project enables game interaction between Logitech and Corsair RGB keyboards
 ## Video demonstration
 [![Demo 1](http://img.youtube.com/vi/KV-doX9VsXk/0.jpg)](http://www.youtube.com/watch?v=KV-doX9VsXk)
 
+## Screenshots
+![Background](http://puu.sh/n4vGy/a0d2434c7d.png)
+![HP/Mana](http://puu.sh/n4vKz/237c19db9b.png)
+![Items](http://puu.sh/n4vMZ/4b836385ce.png)
+
 # F.A.Q.
 * Q: Can this give me a VACation?
 
