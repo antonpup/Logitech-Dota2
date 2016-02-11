@@ -10,6 +10,7 @@ This project enables game interaction between Logitech and Corsair RGB keyboards
 # How to Install
 1. First of all, make sure that "Allow games to control illumination" is enabled in Logitech Gaming Software.
 2. Download the latest release from [here](https://github.com/antonpup/Logitech-Dota2/releases/latest).
+  * If you're on a 32 bit system, download x32 version. If you're on 64 bit, download x64 version.
 3. Extract the archive anywhere on your computer.
 4. Copy the "gamestate_integration_logitech.cfg" into ".steamapps/common/dota 2 beta/game/dota/cfg/gamestate_integration/" folder
 5. Run "Logitech-Dota2.exe" (Run as admin if you have any issues.)
