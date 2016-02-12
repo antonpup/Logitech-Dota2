@@ -63,6 +63,10 @@ namespace Logitech_Dota2.Devices
             {
                 Global.logger.LogLine("Corsair device, Wrapper Exception! Message:" + ex.Message, Logging_Level.Error);
             }
+            catch (Exception ex)
+            {
+                Global.logger.LogLine("Corsair device, Exception! Message:" + ex, Logging_Level.Error);
+            }
 
             isInitialized = false;
             return false;
@@ -77,7 +81,7 @@ namespace Logitech_Dota2.Devices
                 CorsairKeyboardKeyId[] allkeys = Enum.GetValues(typeof(CorsairKeyboardKeyId)).Cast<CorsairKeyboardKeyId>().ToArray();
                 foreach (CorsairKeyboardKeyId key in allkeys)
                 {
-                    if (key != CorsairKeyboardKeyId.Invalid)
+                    if (key != CorsairKeyboardKeyId.Invalid && keyboard[key] != null)
                         saved_keys.Add(key, keyboard[key].Led.Color);
                 }
             }

@@ -46,7 +46,10 @@ namespace Logitech_Dota2
             }
 
             if (!Global.geh.Init())
+            {
+                Global.logger.LogLine("GameEventHander could not initialize", Logging_Level.Error);
                 return;
+            }
 
             Global.gsl = new GameStateListener("http://127.0.0.1:30742/");
             Global.gsl.NewGameState += new NewGameStateHandler(OnNewGameState);

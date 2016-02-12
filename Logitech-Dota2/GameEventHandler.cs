@@ -21,8 +21,6 @@ namespace Logitech_Dota2
         private static Dictionary<Devices.DeviceKeys, Color> keyColors = new Dictionary<Devices.DeviceKeys, Color>();
         private static Dictionary<Devices.DeviceKeys, Color> final_keyColors = new Dictionary<Devices.DeviceKeys, Color>();
 
-        private DeviceManager dev_manager = new DeviceManager();
-
         private bool keyboard_updated = false;
         private Timer update_timer;
 
@@ -344,7 +342,7 @@ namespace Logitech_Dota2
         
         public bool Init()
         {
-            bool devices_inited = dev_manager.Initialize();
+            bool devices_inited = Global.dev_manager.Initialize();
 
             if(devices_inited)
             {
@@ -355,6 +353,9 @@ namespace Logitech_Dota2
 
                 general_timer.Start();
             }
+
+            if (!devices_inited)
+                Global.logger.LogLine("No devices initialized.", Logging_Level.Warning);
 
             return devices_inited;
         }
@@ -397,7 +398,7 @@ namespace Logitech_Dota2
             {
                 if (keyboard_updated)
                 {
-                    dev_manager.ResetDevices();
+                    Global.dev_manager.ResetDevices();
                 }
             }
            
@@ -742,7 +743,7 @@ namespace Logitech_Dota2
                 this.lastUpdate = general_timer.Elapsed.Seconds;
             }
 
-            keyboard_updated = dev_manager.UpdateDevices(keyColors, this.isForced);
+            keyboard_updated = Global.dev_manager.UpdateDevices(keyColors, this.isForced);
             this.isForced = false;
 
             final_keyColors = keyColors;
