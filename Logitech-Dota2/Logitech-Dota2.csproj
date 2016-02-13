@@ -103,9 +103,9 @@
     <Reference Include="CUE.NET">
       <HintPath>..\packages\CUE.NET.1.0.1\lib\net45\CUE.NET.dll</HintPath>
     </Reference>
-    <Reference Include="Dota2GSI, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Dota2GSI, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Dota2GSI.1.0.2\lib\Dota2GSI.dll</HintPath>
+      <HintPath>..\packages\Dota2GSI.1.0.3\lib\Dota2GSI.dll</HintPath>
     </Reference>
     <Reference Include="Hardcodet.Wpf.TaskbarNotification">
       <HintPath>..\packages\SignedBuild-Hardcodet.NotifyIcon.Wpf.1.0.5\lib\net35\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>

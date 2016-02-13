@@ -255,7 +255,7 @@
                         <Label Content="Logitech - Dota 2 Integration" HorizontalAlignment="Left" Margin="8,6,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
                         <Label Content="by Antonpup" HorizontalAlignment="Left" Margin="173,26,0,0" VerticalAlignment="Top"/>
                         <TextBlock HorizontalAlignment="Left" Margin="13,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Source code for this project is available on "/><Hyperlink NavigateUri="https://github.com/antonpup/Logitech-Dota2"><Run Text="GitHub"/></Hyperlink><LineBreak/><Run Text="I can contacted via "/><Hyperlink NavigateUri="http://steamcommunity.com/id/pupant/"><Run Text="Steam"/></Hyperlink><LineBreak/><LineBreak/><Run Text="Dota 2 and Dota 2 logo are owned by "/><Hyperlink NavigateUri="http://www.valvesoftware.com/"><Run Text="Valve Software"/></Hyperlink><LineBreak/><Run Text="Logitech Gaming Software logo is owned by "/><Hyperlink NavigateUri="http://www.logitech.com/"><Run Text="Logitech"/></Hyperlink></TextBlock>
-                        <Label Content="v0.1.1" HorizontalAlignment="Left" Margin="212,9,0,0" VerticalAlignment="Top"/>
+                        <Label Content="v0.1.2" HorizontalAlignment="Left" Margin="212,9,0,0" VerticalAlignment="Top"/>
                     </Grid>
                 </TabItem>
             </TabControl>

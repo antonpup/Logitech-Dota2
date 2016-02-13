@@ -128,7 +128,6 @@ namespace Logitech_Dota2
             catch(Exception e)
             {
                 Global.logger.LogLine("Exception during OnNewGameState. Error: " + e, Logging_Level.Error);
-            
             }
         }
     }
